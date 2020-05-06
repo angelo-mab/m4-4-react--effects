@@ -74,9 +74,9 @@ Fix the following state hooks
 
 ```js
 const Button = ({ type, children }) => {
+  const [color, setColor] = React.useState('red');
+ 
   if (type === 'primary') {
-    const [color, setColor] = React.useState('red');
-
     return (
       <button
         style={{ color }}
